@@ -3,6 +3,7 @@ package com.example.currencyapp
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Adapter
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.currencyapp.databinding.ItemCurrencyBinding
 
@@ -19,7 +20,15 @@ class CurrencyAdapter : RecyclerView.Adapter<CurrencyAdapter.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
+        with(holder.binding.root) {
+            setOnClickListener {
+                findNavController().navigate(
+                    CurrencyFragmentDirections.actionCurrencyFragmentToCurrencyDetailFragment(
+                        position.toString()
+                    )
+                )
+            }
+        }
     }
 
     override fun getItemCount(): Int {
@@ -27,7 +36,7 @@ class CurrencyAdapter : RecyclerView.Adapter<CurrencyAdapter.ViewHolder>() {
     }
 
 
-    inner class ViewHolder(private val binding: ItemCurrencyBinding) : RecyclerView.ViewHolder(binding.root)
+    inner class ViewHolder(internal val binding: ItemCurrencyBinding) : RecyclerView.ViewHolder(binding.root)
 
 
 }
