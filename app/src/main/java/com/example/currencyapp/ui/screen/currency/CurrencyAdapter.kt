@@ -1,8 +1,7 @@
-package com.example.currencyapp
+package com.example.currencyapp.ui.screen.currency
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Adapter
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.currencyapp.databinding.ItemCurrencyBinding

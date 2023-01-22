@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/currencyFragment"
-        android:name="com.example.currencyapp.CurrencyFragment"
+        android:name="com.example.currencyapp.ui.screen.currency.CurrencyFragment"
         android:label="CurrencyFragment"
         tools:layout="@layout/fragment_currency">
         <action
@@ -19,16 +19,25 @@
     </fragment>
     <fragment
         android:id="@+id/currencyConverterFragment"
-        android:name="com.example.currencyapp.CurrencyConverterFragment"
+        android:name="com.example.currencyapp.ui.screen.converter.CurrencyConverterFragment"
         android:label="CurrencyConverterFragment"
-        tools:layout="@layout/fragment_currency_converter"/>
+        tools:layout="@layout/fragment_currency_converter">
+        <action
+            android:id="@+id/action_currencyConverterFragment_to_numberInputDialog"
+            app:destination="@id/numberInputDialog" />
+    </fragment>
     <fragment
         android:id="@+id/currencyDetailFragment"
-        android:name="com.example.currencyapp.CurrencyDetailFragment"
+        android:name="com.example.currencyapp.ui.screen.detail.CurrencyDetailFragment"
         android:label="CurrencyDetailFragment"
         tools:layout="@layout/fragment_currency_detail">
         <argument
             android:name="currency_id"
             app:argType="string" />
     </fragment>
+    <dialog
+        android:id="@+id/numberInputDialog"
+        android:name="com.example.currencyapp.ui.dialog.numberinput.NumberInputDialog"
+        android:label="NumberInputDialog"
+        tools:layout="@layout/dialog_number_input"/>
 </navigation>

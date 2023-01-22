@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="number_key_width">56dp</dimen>
+    <dimen name="number_key_height">56dp</dimen>
+    <dimen name="number_key_margin">24dp</dimen>
+</resources>

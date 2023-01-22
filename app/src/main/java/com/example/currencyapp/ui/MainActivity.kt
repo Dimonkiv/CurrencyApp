@@ -1,10 +1,10 @@
-package com.example.currencyapp
+package com.example.currencyapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import com.example.currencyapp.R
 import com.example.currencyapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
