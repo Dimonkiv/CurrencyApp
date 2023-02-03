@@ -38,6 +38,7 @@ class CurrencyFragment: Fragment() {
     }
 
     private fun initAdapter() {
+        _binding = null
         with(binding) {
             recyclerView.layoutManager = LinearLayoutManager(requireContext())
             recyclerView.adapter = adapter
