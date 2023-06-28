@@ -1,6 +1,9 @@
 package com.example.currencyapp.di.module
 
 import com.example.currencyapp.data.repository.CurrencyRepository
+import com.example.currencyapp.domain.ExchangeRateUseCase
+import com.example.currencyapp.domain.ExchangeRateUseCaseImpl
+import com.example.currencyapp.ui.screen.currency.CurrencyPresenter
 import com.example.currencyapp.ui.screen.splash.SplashPresenter
 import dagger.Module
 import dagger.Provides
@@ -14,5 +17,10 @@ class PresenterModule {
     @Provides
     fun provideSplashPresenter(repository: CurrencyRepository): SplashPresenter {
         return SplashPresenter(repository)
+    }
+
+    @Provides
+    fun provideCurrencyPresenter(useCase: ExchangeRateUseCase): CurrencyPresenter {
+        return CurrencyPresenter(useCase)
     }
 }

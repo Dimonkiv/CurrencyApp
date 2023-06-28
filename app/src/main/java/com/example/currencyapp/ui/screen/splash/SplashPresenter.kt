@@ -33,7 +33,7 @@ class SplashPresenter @Inject constructor(
 
     fun syncCurrencyData() {
         val subscription = repository.syncCurrencies()
-            .delay(5, TimeUnit.SECONDS)
+            .delay(2, TimeUnit.SECONDS)
             .subscribeOn(Schedulers.newThread())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(

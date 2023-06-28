@@ -1,5 +1,6 @@
-package com.example.currencyapp.di
+package com.example.currencyapp.di.module
 
+import com.example.currencyapp.network.ExchangeService
 import com.google.gson.Gson
 import dagger.Module
 import dagger.Provides
@@ -21,7 +22,7 @@ class NetworkModule {
     @Singleton
     fun provideRetrofit(httpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("base")
+            .baseUrl("https://api.monobank.ua/")
             .client(httpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
@@ -50,5 +51,11 @@ class NetworkModule {
     @Singleton
     fun provideGsonConverter(): Gson {
         return Gson()
+    }
+
+    @Provides
+    @Singleton
+    fun provideExchangeService(retrofit: Retrofit): ExchangeService {
+        return retrofit.create(ExchangeService::class.java)
     }
 }

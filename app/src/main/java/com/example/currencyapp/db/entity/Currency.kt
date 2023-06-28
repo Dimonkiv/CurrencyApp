@@ -11,16 +11,13 @@ import com.google.gson.annotations.SerializedName
 @Entity(tableName = "currency")
 data class Currency(
     @PrimaryKey(autoGenerate = true)
-    val id: Int,
-    @SerializedName("code")
+    val id: Int = 0,
     @ColumnInfo(name = "short_name")
     val shortName: String,
-    @SerializedName("name")
     @ColumnInfo(name = "name")
     val name: String,
-    @SerializedName("number")
     @ColumnInfo(name = "code")
     val code: String,
-    @ColumnInfo(name = "icon")
-    var icon: String = ""
+    @ColumnInfo(name = "image_name")
+    var imageName: String = ""
 )

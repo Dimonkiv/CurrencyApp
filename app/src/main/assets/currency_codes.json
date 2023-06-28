@@ -164,918 +164,1064 @@
     "code":"BZD",
     "decimals":2,
     "name":"Belize dollar",
-    "number":"84"
+    "number":"84",
+    "country_code": "BZ"
   },
   {
     "code":"CAD",
     "decimals":2,
     "name":"Canadian dollar",
-    "number":"124"
+    "number":"124",
+    "country_code": "CA"
   },
   {
     "code":"CDF",
     "decimals":2,
     "name":"Congolese franc",
-    "number":"976"
-  },
-  {
-    "code":"CHE",
-    "decimals":2,
-    "name":"WIR Euro (complementary currency)",
-    "number":"947"
+    "number":"976",
+    "country_code": "CD"
   },
   {
     "code":"CHF",
     "decimals":2,
     "name":"Swiss franc",
-    "number":"756"
+    "number":"756",
+    "country_code": "CH"
   },
   {
     "code":"CHW",
     "decimals":2,
     "name":"WIR Franc (complementary currency)",
-    "number":"948"
+    "number":"948",
+    "country_code": "CH"
   },
   {
     "code":"CLF",
     "decimals":0,
     "name":"Unidad de Fomento (funds code)",
-    "number":"990"
+    "number":"990",
+    "country_code": "CL"
   },
   {
     "code":"CLP",
     "decimals":0,
     "name":"Chilean peso",
-    "number":"152"
+    "number":"152",
+    "country_code": "CL"
   },
   {
     "code":"CNY",
     "decimals":2,
     "name":"Chinese yuan",
-    "number":"156"
+    "number":"156",
+    "country_code": "CN"
   },
   {
     "code":"COP",
     "decimals":2,
     "name":"Colombian peso",
-    "number":"170"
+    "number":"170",
+    "country_code": "CO"
   },
   {
     "code":"COU",
     "decimals":2,
     "name":"Unidad de Valor Real",
-    "number":"970"
+    "number":"970",
+    "country_code": "CU"
   },
   {
     "code":"CRC",
     "decimals":2,
     "name":"Costa Rican colon",
-    "number":"188"
+    "number":"188",
+    "country_code": "CR"
   },
   {
     "code":"CUC",
     "decimals":2,
     "name":"Cuban convertible peso",
-    "number":"931"
+    "number":"931",
+    "country_code": "CU"
   },
   {
     "code":"CUP",
     "decimals":2,
     "name":"Cuban peso",
-    "number":"192"
+    "number":"192",
+    "country_code": "CU"
   },
   {
     "code":"CVE",
     "decimals":0,
     "name":"Cape Verde escudo",
-    "number":"132"
+    "number":"132",
+    "country_code": "CV"
   },
   {
     "code":"CZK",
     "decimals":2,
     "name":"Czech koruna",
-    "number":"203"
+    "number":"203",
+    "country_code": "CZ"
   },
   {
     "code":"DJF",
     "decimals":0,
     "name":"Djiboutian franc",
-    "number":"262"
+    "number":"262",
+    "country_code": "DJ"
   },
   {
     "code":"DKK",
     "decimals":2,
     "name":"Danish krone",
-    "number":"208"
+    "number":"208",
+    "country_code": "DK"
   },
   {
     "code":"DOP",
     "decimals":2,
     "name":"Dominican peso",
-    "number":"214"
+    "number":"214",
+    "country_code": "DO"
   },
   {
     "code":"DZD",
     "decimals":2,
     "name":"Algerian dinar",
-    "number":"12"
+    "number":"12",
+    "country_code": "DZ"
   },
   {
     "code":"EGP",
     "decimals":2,
     "name":"Egyptian pound",
-    "number":"818"
+    "number":"818",
+    "country_code": "EG"
   },
   {
     "code":"ERN",
     "decimals":2,
     "name":"Eritrean nakfa",
-    "number":"232"
+    "number":"232",
+    "country_code": "ER"
   },
   {
     "code":"ETB",
     "decimals":2,
     "name":"Ethiopian birr",
-    "number":"230"
+    "number":"230",
+    "country_code": "ET"
   },
   {
     "code":"EUR",
     "decimals":2,
     "name":"Euro",
-    "number":"978"
+    "number":"978",
+    "country_code": "EU"
   },
   {
     "code":"FJD",
     "decimals":2,
     "name":"Fiji dollar",
-    "number":"242"
+    "number":"242",
+    "country_code": "FJ"
   },
   {
     "code":"FKP",
     "decimals":2,
     "name":"Falkland Islands pound",
-    "number":"238"
+    "number":"238",
+    "country_code": "FK"
   },
   {
     "code":"GBP",
     "decimals":2,
     "name":"Pound sterling",
-    "number":"826"
+    "number":"826",
+    "country_code": "GB"
   },
   {
     "code":"GEL",
     "decimals":2,
     "name":"Georgian lari",
-    "number":"981"
+    "number":"981",
+    "country_code": "GE"
   },
   {
     "code":"GHS",
     "decimals":2,
     "name":"Ghanaian cedi",
-    "number":"936"
+    "number":"936",
+    "country_code": "GH"
   },
   {
     "code":"GIP",
     "decimals":2,
     "name":"Gibraltar pound",
-    "number":"292"
+    "number":"292",
+    "country_code": "GI"
   },
   {
     "code":"GMD",
     "decimals":2,
     "name":"Gambian dalasi",
-    "number":"270"
+    "number":"270",
+    "country_code": "GM"
   },
   {
     "code":"GNF",
     "decimals":0,
     "name":"Guinean franc",
-    "number":"324"
+    "number":"324",
+    "country_code": "GN"
   },
   {
     "code":"GTQ",
     "decimals":2,
     "name":"Guatemalan quetzal",
-    "number":"320"
+    "number":"320",
+    "country_code": "GT"
   },
   {
     "code":"GYD",
     "decimals":2,
     "name":"Guyanese dollar",
-    "number":"328"
+    "number":"328",
+    "country_code": "GY"
   },
   {
     "code":"HKD",
     "decimals":2,
     "name":"Hong Kong dollar",
-    "number":"344"
+    "number":"344",
+    "country_code": "HK"
   },
   {
     "code":"HNL",
     "decimals":2,
     "name":"Honduran lempira",
-    "number":"340"
+    "number":"340",
+    "country_code": "NH"
   },
   {
     "code":"HRK",
     "decimals":2,
     "name":"Croatian kuna",
-    "number":"191"
+    "number":"191",
+    "country_code": "HR"
   },
   {
     "code":"HTG",
     "decimals":2,
     "name":"Haitian gourde",
-    "number":"332"
+    "number":"332",
+    "country_code": "HT"
   },
   {
     "code":"HUF",
     "decimals":2,
     "name":"Hungarian forint",
-    "number":"348"
+    "number":"348",
+    "country_code": "HU"
   },
   {
     "code":"IDR",
     "decimals":2,
     "name":"Indonesian rupiah",
-    "number":"360"
+    "number":"360",
+    "country_code": "ID"
   },
   {
     "code":"ILS",
     "decimals":2,
     "name":"Israeli new shekel",
-    "number":"376"
+    "number":"376",
+    "country_code": "IL"
   },
   {
     "code":"INR",
     "decimals":2,
     "name":"Indian rupee",
-    "number":"356"
+    "number":"356",
+    "country_code": "IN"
   },
   {
     "code":"IQD",
     "decimals":3,
     "name":"Iraqi dinar",
-    "number":"368"
+    "number":"368",
+    "country_code": "IQ"
   },
   {
     "code":"IRR",
     "decimals":0,
     "name":"Iranian rial",
-    "number":"364"
+    "number":"364",
+    "country_code": "IR"
   },
   {
     "code":"ISK",
     "decimals":0,
     "name":"Icelandic króna",
-    "number":"352"
+    "number":"352",
+    "country_code": "IS"
   },
   {
     "code":"JMD",
     "decimals":2,
     "name":"Jamaican dollar",
-    "number":"388"
+    "number":"388",
+    "country_code": "JM"
   },
   {
     "code":"JOD",
     "decimals":3,
     "name":"Jordanian dinar",
-    "number":"400"
+    "number":"400",
+    "country_code": "JO"
   },
   {
     "code":"JPY",
     "decimals":0,
     "name":"Japanese yen",
-    "number":"392"
+    "number":"392",
+    "country_code": "JP"
   },
   {
     "code":"KES",
     "decimals":2,
     "name":"Kenyan shilling",
-    "number":"404"
+    "number":"404",
+    "country_code": "KE"
   },
   {
     "code":"KGS",
     "decimals":2,
     "name":"Kyrgyzstani som",
-    "number":"417"
+    "number":"417",
+    "country_code": "KG"
   },
   {
     "code":"KHR",
     "decimals":2,
     "name":"Cambodian riel",
-    "number":"116"
+    "number":"116",
+    "country_code": "KH"
   },
   {
     "code":"KMF",
     "decimals":0,
     "name":"Comoro franc",
-    "number":"174"
+    "number":"174",
+    "country_code": "KM"
   },
   {
     "code":"KPW",
     "decimals":0,
     "name":"North Korean won",
-    "number":"408"
+    "number":"408",
+    "country_code": "KP"
   },
   {
     "code":"KRW",
     "decimals":0,
     "name":"South Korean won",
-    "number":"410"
+    "number":"410",
+    "country_code": "KR"
   },
   {
     "code":"KWD",
     "decimals":3,
     "name":"Kuwaiti dinar",
-    "number":"414"
+    "number":"414",
+    "country_code": "KW"
   },
   {
     "code":"KYD",
     "decimals":2,
     "name":"Cayman Islands dollar",
-    "number":"136"
+    "number":"136",
+    "country_code": "KY"
   },
   {
     "code":"KZT",
     "decimals":2,
     "name":"Kazakhstani tenge",
-    "number":"398"
+    "number":"398",
+    "country_code": "KZ"
   },
   {
     "code":"LAK",
     "decimals":0,
     "name":"Lao kip",
-    "number":"418"
+    "number":"418",
+    "country_code": "LA"
   },
   {
     "code":"LBP",
     "decimals":0,
     "name":"Lebanese pound",
-    "number":"422"
+    "number":"422",
+    "country_code": "LB"
   },
   {
     "code":"LKR",
     "decimals":2,
     "name":"Sri Lankan rupee",
-    "number":"144"
+    "number":"144",
+    "country_code": "LK"
   },
   {
     "code":"LRD",
     "decimals":2,
     "name":"Liberian dollar",
-    "number":"430"
+    "number":"430",
+    "country_code": "LR"
   },
   {
     "code":"LSL",
     "decimals":2,
     "name":"Lesotho loti",
-    "number":"426"
+    "number":"426",
+    "country_code": "LS"
   },
   {
     "code":"LTL",
     "decimals":2,
     "name":"Lithuanian litas",
-    "number":"440"
+    "number":"440",
+    "country_code": "LT"
   },
   {
     "code":"LVL",
     "decimals":2,
     "name":"Latvian lats",
-    "number":"428"
+    "number":"428",
+    "country_code": "LV"
   },
   {
     "code":"LYD",
     "decimals":3,
     "name":"Libyan dinar",
-    "number":"434"
+    "number":"434",
+    "country_code": "LY"
   },
   {
     "code":"MAD",
     "decimals":2,
     "name":"Moroccan dirham",
-    "number":"504"
+    "number":"504",
+    "country_code": "MA"
   },
   {
     "code":"MDL",
     "decimals":2,
     "name":"Moldovan leu",
-    "number":"498"
+    "number":"498",
+    "country_code": "MD"
   },
   {
     "code":"MGA",
     "decimals":0,
     "name":"Malagasy ariary",
-    "number":"969"
+    "number":"969",
+    "country_code": "MG"
   },
   {
     "code":"MKD",
     "decimals":0,
     "name":"Macedonian denar",
-    "number":"807"
+    "number":"807",
+    "country_code": "MK"
   },
   {
     "code":"MMK",
     "decimals":0,
     "name":"Myanma kyat",
-    "number":"104"
+    "number":"104",
+    "country_code": "MM"
   },
   {
     "code":"MNT",
     "decimals":2,
     "name":"Mongolian tugrik",
-    "number":"496"
+    "number":"496",
+    "country_code": "MN"
   },
   {
     "code":"MOP",
     "decimals":2,
     "name":"Macanese pataca",
-    "number":"446"
+    "number":"446",
+    "country_code": "MO"
   },
   {
     "code":"MRO",
     "decimals":0,
     "name":"Mauritanian ouguiya",
-    "number":"478"
+    "number":"478",
+    "country_code": "MR"
   },
   {
     "code":"MUR",
     "decimals":2,
     "name":"Mauritian rupee",
-    "number":"480"
+    "number":"480",
+    "country_code": "MU"
   },
   {
     "code":"MVR",
     "decimals":2,
     "name":"Maldivian rufiyaa",
-    "number":"462"
+    "number":"462",
+    "country_code": "MV"
   },
   {
     "code":"MWK",
     "decimals":2,
     "name":"Malawian kwacha",
-    "number":"454"
+    "number":"454",
+    "country_code": "MW"
   },
   {
     "code":"MXN",
     "decimals":2,
     "name":"Mexican peso",
-    "number":"484"
+    "number":"484",
+    "country_code": "MX"
   },
   {
     "code":"MXV",
     "decimals":2,
     "name":"Mexican Unidad de Inversion (UDI) (funds code)",
-    "number":"979"
+    "number":"979",
+    "country_code": "MX"
   },
   {
     "code":"MYR",
     "decimals":2,
     "name":"Malaysian ringgit",
-    "number":"458"
+    "number":"458",
+    "country_code": "MY"
   },
   {
     "code":"MZN",
     "decimals":2,
     "name":"Mozambican metical",
-    "number":"943"
+    "number":"943",
+    "country_code": "MZ"
   },
   {
     "code":"NAD",
     "decimals":2,
     "name":"Namibian dollar",
-    "number":"516"
+    "number":"516",
+    "country_code": "NA"
   },
   {
     "code":"NGN",
     "decimals":2,
     "name":"Nigerian naira",
-    "number":"566"
+    "number":"566",
+    "country_code": "NG"
   },
   {
     "code":"NIO",
     "decimals":2,
     "name":"Nicaraguan córdoba",
-    "number":"558"
+    "number":"558",
+    "country_code": "NI"
   },
   {
     "code":"NOK",
     "decimals":2,
     "name":"Norwegian krone",
-    "number":"578"
+    "number":"578",
+    "country_code": "NO"
   },
   {
     "code":"NPR",
     "decimals":2,
     "name":"Nepalese rupee",
-    "number":"524"
+    "number":"524",
+    "country_code": "NP"
   },
   {
     "code":"NZD",
     "decimals":2,
     "name":"New Zealand dollar",
-    "number":"554"
+    "number":"554",
+    "country_code": "NZ"
   },
   {
     "code":"OMR",
     "decimals":3,
     "name":"Omani rial",
-    "number":"512"
+    "number":"512",
+    "country_code": "OM"
   },
   {
     "code":"PAB",
     "decimals":2,
     "name":"Panamanian balboa",
-    "number":"590"
+    "number":"590",
+    "country_code": "PA"
   },
   {
     "code":"PEN",
     "decimals":2,
     "name":"Peruvian nuevo sol",
-    "number":"604"
+    "number":"604",
+    "country_code": "PE"
   },
   {
     "code":"PGK",
     "decimals":2,
     "name":"Papua New Guinean kina",
-    "number":"598"
+    "number":"598",
+    "country_code": "PG"
   },
   {
     "code":"PHP",
     "decimals":2,
     "name":"Philippine peso",
-    "number":"608"
+    "number":"608",
+    "country_code": "PH"
   },
   {
     "code":"PKR",
     "decimals":2,
     "name":"Pakistani rupee",
-    "number":"586"
+    "number":"586",
+    "country_code": "PK"
   },
   {
     "code":"PLN",
     "decimals":2,
     "name":"Polish złoty",
-    "number":"985"
+    "number":"985",
+    "country_code": "PL"
   },
   {
     "code":"PYG",
     "decimals":0,
     "name":"Paraguayan guaraní",
-    "number":"600"
+    "number":"600",
+    "country_code": "PY"
   },
   {
     "code":"QAR",
     "decimals":2,
     "name":"Qatari riyal",
-    "number":"634"
+    "number":"634",
+    "country_code": "QA"
   },
   {
     "code":"RON",
     "decimals":2,
     "name":"Romanian new leu",
-    "number":"946"
+    "number":"946",
+    "country_code": "RO"
   },
   {
     "code":"RSD",
     "decimals":2,
     "name":"Serbian dinar",
-    "number":"941"
+    "number":"941",
+    "country_code": "RS"
   },
   {
     "code":"RUB",
     "decimals":2,
     "name":"Russian rouble",
-    "number":"643"
+    "number":"643",
+    "country_code": "RU"
   },
   {
     "code":"RWF",
     "decimals":0,
     "name":"Rwandan franc",
-    "number":"646"
+    "number":"646",
+    "country_code": "RW"
   },
   {
     "code":"SAR",
     "decimals":2,
     "name":"Saudi riyal",
-    "number":"682"
+    "number":"682",
+    "country_code": "SA"
   },
   {
     "code":"SBD",
     "decimals":2,
     "name":"Solomon Islands dollar",
-    "number":"90"
+    "number":"90",
+    "country_code": "SB"
   },
   {
     "code":"SCR",
     "decimals":2,
     "name":"Seychelles rupee",
-    "number":"690"
+    "number":"690",
+    "country_code": "SC"
   },
   {
     "code":"SDG",
     "decimals":2,
     "name":"Sudanese pound",
-    "number":"938"
+    "number":"938",
+    "country_code": "SD"
   },
   {
     "code":"SEK",
     "decimals":2,
     "name":"Swedish krona/kronor",
-    "number":"752"
+    "number":"752",
+    "country_code": "SE"
   },
   {
     "code":"SGD",
     "decimals":2,
     "name":"Singapore dollar",
-    "number":"702"
+    "number":"702",
+    "country_code": "SG"
   },
   {
     "code":"SHP",
     "decimals":2,
     "name":"Saint Helena pound",
-    "number":"654"
+    "number":"654",
+    "country_code": "SH"
   },
   {
     "code":"SLL",
     "decimals":0,
     "name":"Sierra Leonean leone",
-    "number":"694"
+    "number":"694",
+    "country_code": "SL"
   },
   {
     "code":"SOS",
     "decimals":2,
     "name":"Somali shilling",
-    "number":"706"
+    "number":"706",
+    "country_code": "SO"
   },
   {
     "code":"SRD",
     "decimals":2,
     "name":"Surinamese dollar",
-    "number":"968"
+    "number":"968",
+    "country_code": "SR"
   },
   {
     "code":"SSP",
     "decimals":2,
     "name":"South Sudanese pound",
-    "number":"728"
+    "number":"728",
+    "country_code": "SS"
   },
   {
     "code":"STD",
     "decimals":0,
     "name":"São Tomé and Príncipe dobra",
-    "number":"678"
+    "number":"678",
+    "country_code": "ST"
   },
   {
     "code":"SYP",
     "decimals":2,
     "name":"Syrian pound",
-    "number":"760"
+    "number":"760",
+    "country_code": "SY"
   },
   {
     "code":"SZL",
     "decimals":2,
     "name":"Swazi lilangeni",
-    "number":"748"
+    "number":"748",
+    "country_code": "SZ"
   },
   {
     "code":"THB",
     "decimals":2,
     "name":"Thai baht",
-    "number":"764"
+    "number":"764",
+    "country_code": "TH"
   },
   {
     "code":"TJS",
     "decimals":2,
     "name":"Tajikistani somoni",
-    "number":"972"
+    "number":"972",
+    "country_code": "TJ"
   },
   {
     "code":"TMT",
     "decimals":2,
     "name":"Turkmenistani manat",
-    "number":"934"
+    "number":"934",
+    "country_code": "TM"
   },
   {
     "code":"TND",
     "decimals":3,
     "name":"Tunisian dinar",
-    "number":"788"
+    "number":"788",
+    "country_code": "TN"
   },
   {
     "code":"TOP",
     "decimals":2,
     "name":"Tongan paʻanga",
-    "number":"776"
+    "number":"776",
+    "country_code": "TO"
   },
   {
     "code":"TRY",
     "decimals":2,
     "name":"Turkish lira",
-    "number":"949"
+    "number":"949",
+    "country_code": "TR"
   },
   {
     "code":"TTD",
     "decimals":2,
     "name":"Trinidad and Tobago dollar",
-    "number":"780"
+    "number":"780",
+    "country_code": "TT"
   },
   {
     "code":"TWD",
     "decimals":2,
     "name":"New Taiwan dollar",
-    "number":"901"
+    "number":"901",
+    "country_code": "TW"
   },
   {
     "code":"TZS",
     "decimals":2,
     "name":"Tanzanian shilling",
-    "number":"834"
+    "number":"834",
+    "country_code": "TZ"
   },
   {
     "code":"UAH",
     "decimals":2,
     "name":"Ukrainian hryvnia",
-    "number":"980"
+    "number":"980",
+    "country_code": "UA"
   },
   {
     "code":"UGX",
     "decimals":2,
     "name":"Ugandan shilling",
-    "number":"800"
+    "number":"800",
+    "country_code": "UG"
   },
   {
     "code":"USD",
     "decimals":2,
     "name":"United States dollar",
-    "number":"840"
+    "number":"840",
+    "country_code": "US"
   },
   {
     "code":"USN",
     "decimals":2,
     "name":"United States dollar (next day) (funds code)",
-    "number":"997"
+    "number":"997",
+    "country_code": "US"
   },
   {
     "code":"USS",
     "decimals":2,
     "name":"United States dollar (same day) (funds code) (one source[who?] claims it is no longer used, but it is still on the ISO 4217-MA list)",
-    "number":"998"
+    "number":"998",
+    "country_code": "US"
   },
   {
     "code":"UYI",
     "decimals":0,
     "name":"Uruguay Peso en Unidades Indexadas (URUIURUI) (funds code)",
-    "number":"940"
+    "number":"940",
+    "country_code": "UY"
   },
   {
     "code":"UYU",
     "decimals":2,
     "name":"Uruguayan peso",
-    "number":"858"
+    "number":"858",
+    "country_code": "UY"
   },
   {
     "code":"UZS",
     "decimals":2,
     "name":"Uzbekistan som",
-    "number":"860"
+    "number":"860",
+    "country_code": "UZ"
   },
   {
     "code":"VEF",
     "decimals":2,
     "name":"Venezuelan bolívar fuerte",
-    "number":"937"
+    "number":"937",
+    "country_code": "VE"
   },
   {
     "code":"VND",
     "decimals":0,
     "name":"Vietnamese dong",
-    "number":"704"
+    "number":"704",
+    "country_code": "VN"
   },
   {
     "code":"VUV",
     "decimals":0,
     "name":"Vanuatu vatu",
-    "number":"548"
+    "number":"548",
+    "country_code": "VU"
   },
   {
     "code":"WST",
     "decimals":2,
     "name":"Samoan tala",
-    "number":"882"
+    "number":"882",
+    "country_code": "VS"
   },
   {
     "code":"XAF",
     "decimals":0,
     "name":"CFA franc BEAC",
-    "number":"950"
+    "number":"950",
+    "country_code": "XA"
   },
   {
     "code":"XAG",
     "decimals":null,
     "name":"Silver (one troy ounce)",
-    "number":"961"
+    "number":"961",
+    "country_code": "XA"
   },
   {
     "code":"XAU",
     "decimals":null,
     "name":"Gold (one troy ounce)",
-    "number":"959"
+    "number":"959",
+    "country_code": "XA"
   },
   {
     "code":"XBA",
     "decimals":null,
     "name":"European Composite Unit (EURCO) (bond market unit)",
-    "number":"955"
+    "number":"955",
+    "country_code": "XB"
   },
   {
     "code":"XBB",
     "decimals":null,
     "name":"European Monetary Unit (E.M.U.-6) (bond market unit)",
-    "number":"956"
+    "number":"956",
+    "country_code": "XB"
   },
   {
     "code":"XBC",
     "decimals":null,
     "name":"European Unit of Account 9 (E.U.A.-9) (bond market unit)",
-    "number":"957"
+    "number":"957",
+    "country_code": "XB"
   },
   {
     "code":"XBD",
     "decimals":null,
     "name":"European Unit of Account 17 (E.U.A.-17) (bond market unit)",
-    "number":"958"
+    "number":"958",
+    "country_code": "XB"
   },
   {
     "code":"XCD",
     "decimals":2,
     "name":"East Caribbean dollar",
-    "number":"951"
+    "number":"951",
+    "country_code": "XC"
   },
   {
     "code":"XDR",
     "decimals":null,
     "name":"Special drawing rights",
-    "number":"960"
+    "number":"960",
+    "country_code": "XD"
   },
   {
     "code":"XFU",
     "decimals":null,
     "name":"UIC franc (special settlement currency)",
-    "number":"Nil"
+    "number":"Nil",
+    "country_code": "XF"
   },
   {
     "code":"XOF",
     "decimals":0,
     "name":"CFA franc BCEAO",
-    "number":"952"
+    "number":"952",
+    "country_code": "XO"
   },
   {
     "code":"XPD",
     "decimals":null,
     "name":"Palladium (one troy ounce)",
-    "number":"964"
+    "number":"964",
+    "country_code": "XP"
   },
   {
     "code":"XPF",
     "decimals":0,
     "name":"CFP franc",
-    "number":"953"
+    "number":"953",
+    "country_code": "XP"
   },
   {
     "code":"XPT",
     "decimals":null,
     "name":"Platinum (one troy ounce)",
-    "number":"962"
+    "number":"962",
+    "country_code": "XP"
   },
   {
     "code":"XTS",
     "decimals":null,
     "name":"Code reserved for testing purposes",
-    "number":"963"
+    "number":"963",
+    "country_code": "XT"
   },
   {
     "code":"XXX",
     "decimals":null,
     "name":"No currency",
-    "number":"999"
+    "number":"999",
+    "country_code": "XX"
   },
   {
     "code":"YER",
     "decimals":2,
     "name":"Yemeni rial",
-    "number":"886"
+    "number":"886",
+    "country_code": "YE"
   },
   {
     "code":"ZAR",
     "decimals":2,
     "name":"South African rand",
-    "number":"710"
+    "number":"710",
+    "country_code": "ZA"
   },
   {
     "code":"ZMW",
     "decimals":2,
     "name":"Zambian kwacha",
-    "number":"967"
+    "number":"967",
+    "country_code": "ZM"
   }
 ]

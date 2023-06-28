@@ -1,6 +1,6 @@
 package com.example.currencyapp.utils
 
-import com.example.currencyapp.db.entity.Currency
+import com.example.currencyapp.data.model.CurrencyIso4217
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import javax.inject.Inject
@@ -9,14 +9,13 @@ import javax.inject.Inject
  * Created by ivankiv on 10,April,2023
  */
 class GsonHelperImpl @Inject constructor(
-    private val fileReaderHelper: FileReaderHelper,
     private val gson: Gson
 ) : GsonHelper {
 
-    override fun parseJson(file: String): List<Currency> {
+    override fun parseJson(source: String): List<CurrencyIso4217> {
         return gson.fromJson(
-            fileReaderHelper.readFile(file),
-            object : TypeToken<List<Currency>>() {}.type
+            source,
+            object : TypeToken<List<CurrencyIso4217>>() {}.type
         )
     }
 }

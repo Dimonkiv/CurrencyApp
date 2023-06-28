@@ -1,9 +1,10 @@
 package com.example.currencyapp.data.repository
 
 import android.util.Log
-import com.example.currencyapp.data.datasource.LocalCurrencyDataSource
+import com.example.currencyapp.data.datasource.FileCurrencyDataSource
+import com.example.currencyapp.db.dao.CurrencyDao
 import com.example.currencyapp.db.entity.Currency
-import com.example.currencyapp.utils.GsonHelper
+import com.example.currencyapp.domain.CurrencyMapper
 import io.reactivex.Single
 import javax.inject.Inject
 
@@ -11,12 +12,13 @@ import javax.inject.Inject
  * Created by ivankiv on 21,February,2023
  */
 class CurrencyRepositoryImpl @Inject constructor(
-    private val dataSource: LocalCurrencyDataSource,
-    private val gsonHelper: GsonHelper
+    private val localDataSource: CurrencyDao,
+    private val fileDataSource: FileCurrencyDataSource,
+    private val mapper: CurrencyMapper
 ): CurrencyRepository {
 
     override fun syncCurrencies(): Single<List<Currency>> {
-        return dataSource.getAll()
+        return localDataSource.getAll()
             .map { items ->
                 if (items.isEmpty()) {
                     return@map saveCurrencies()
@@ -27,14 +29,13 @@ class CurrencyRepositoryImpl @Inject constructor(
     }
 
     private fun saveCurrencies(): List<Currency> {
-        return gsonHelper.parseJson("currency_codes.json")
-            .map {
-                it.icon = "ic_flag_${it.shortName.lowercase()}"
-                return@map it
+        return fileDataSource.readData("currency_codes.json")
+            .map {currencyIso4217 ->
+                mapper.map(currencyIso4217)
             }
-            .map {
-                dataSource.insert(it)
-                return@map it
+            .map {currency ->
+                localDataSource.insert(currency)
+                return@map currency
             }
     }
 

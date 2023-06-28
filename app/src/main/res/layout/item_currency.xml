@@ -25,24 +25,24 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/currency_tv"
+            android:id="@+id/short_title_tv"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="16dp"
             android:textColor="@color/title_color"
-            app:layout_constraintBottom_toTopOf="@id/currency_desc_tv"
+            app:layout_constraintBottom_toTopOf="@id/title_tv"
             app:layout_constraintStart_toEndOf="@id/flag_iv"
             app:layout_constraintTop_toTopOf="@id/flag_iv"
             tools:text="UAH" />
 
         <TextView
-            android:id="@+id/currency_desc_tv"
+            android:id="@+id/title_tv"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textColor="@color/subtitle_color"
             android:layout_marginStart="16dp"
             app:layout_constraintBottom_toBottomOf="@id/flag_iv"
-            app:layout_constraintTop_toBottomOf="@id/currency_tv"
+            app:layout_constraintTop_toBottomOf="@id/short_title_tv"
             app:layout_constraintStart_toEndOf="@id/flag_iv"
             tools:text="Українська гривня" />
 
