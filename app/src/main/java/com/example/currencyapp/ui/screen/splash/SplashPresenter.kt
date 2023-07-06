@@ -2,8 +2,8 @@ package com.example.currencyapp.ui.screen.splash
 
 import android.util.Log
 import com.example.currencyapp.data.repository.CurrencyRepository
+import com.example.currencyapp.ui.base.BasePresenter
 import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
@@ -13,23 +13,7 @@ import javax.inject.Inject
  */
 class SplashPresenter @Inject constructor(
     private val repository: CurrencyRepository
-) {
-
-    private val disposable = CompositeDisposable()
-
-    private var view: SplashView? = null
-
-    fun attachView(view: SplashView) {
-        this.view = view
-    }
-
-    fun detachView() {
-        view = null
-    }
-
-    fun unsubscribe() {
-        disposable.clear()
-    }
+) : BasePresenter<SplashView>() {
 
     fun syncCurrencyData() {
         val subscription = repository.syncCurrencies()

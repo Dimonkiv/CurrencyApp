@@ -6,22 +6,13 @@ import com.example.currencyapp.domain.ExchangeRate
 /**
  * Created by ivankiv on 06,June,2023
  */
-class ExchangeRateDiffCallback(
-    private val oldItems: List<ExchangeRate>,
-    private val newItems: List<ExchangeRate>) : DiffUtil.Callback() {
+class ExchangeRateDiffCallback : DiffUtil.ItemCallback<ExchangeRate>() {
 
-    override fun getOldListSize(): Int  = oldItems.size
-
-    override fun getNewListSize(): Int = newItems.size
-
-    override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-        return oldItems[oldItemPosition] == newItems[newItemPosition]
+    override fun areItemsTheSame(oldItem: ExchangeRate, newItem: ExchangeRate): Boolean {
+        return oldItem == newItem
     }
 
-    override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-        val oldItem = oldItems[oldItemPosition]
-        val newItem = newItems[newItemPosition]
-
+    override fun areContentsTheSame(oldItem: ExchangeRate, newItem: ExchangeRate): Boolean {
         return oldItem.title == newItem.title
     }
 }

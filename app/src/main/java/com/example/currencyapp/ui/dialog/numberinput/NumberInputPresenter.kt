@@ -1,15 +1,17 @@
 package com.example.currencyapp.ui.dialog.numberinput
 
+import com.example.currencyapp.ui.base.BasePresenter
+
 /**
  * Created by ivankiv on 06,January,2023
  */
-class NumberInputPresenter(private val view: NumberInputView) {
+class NumberInputPresenter : BasePresenter<NumberInputView>()  {
 
     private var input = ""
 
     private fun updateInput(input: String) {
         this.input = input
-        view.showInput(input)
+        view?.showInput(input)
     }
 
     /**
@@ -24,6 +26,6 @@ class NumberInputPresenter(private val view: NumberInputView) {
     }
 
     fun onDoneBtnClicked() {
-        view.convertInput(input)
+        view?.convertInput(input)
     }
 }

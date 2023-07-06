@@ -4,43 +4,37 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
-import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.example.currencyapp.R
 import com.example.currencyapp.databinding.ItemCurrencyBinding
 import com.example.currencyapp.domain.ExchangeRate
+import com.example.currencyapp.ui.base.BaseAdapter
 import com.example.currencyapp.utils.DrawableHelper
 import com.example.currencyapp.utils.ExchangeRateDiffCallback
 
 /**
  * Created by ivankiv on 27,December,2022
  */
-class CurrencyAdapter(private val context: Context) : RecyclerView.Adapter<CurrencyAdapter.ViewHolder>() {
-
-    private val items = mutableListOf<ExchangeRate>()
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = ItemCurrencyBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return ViewHolder(binding)
+class CurrencyAdapter(
+    private val context: Context
+) : BaseAdapter<ExchangeRate, ItemCurrencyBinding>(
+    ExchangeRateDiffCallback()
+) {
+    override fun createBinding(inflater: LayoutInflater, parent: ViewGroup): ItemCurrencyBinding {
+        return ItemCurrencyBinding.inflate(inflater, parent, false)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = items[position]
+    override fun bindItem(binding: ItemCurrencyBinding, item: ExchangeRate, pos: Int) {
+        bindTitle(binding, item)
+        bindRate(binding, item)
 
-        bindTitle(holder.binding, item)
-        bindRate(holder.binding, item)
-
-        with(holder.binding) {
+        with(binding) {
 
             flagIv.setImageDrawable(DrawableHelper.getDrawableByName(context, item.icon))
 
             root.setOnClickListener {
                 root.findNavController().navigate(
                     CurrencyFragmentDirections.actionCurrencyFragmentToCurrencyDetailFragment(
-                        position.toString()
+                        pos.toString()
                     )
                 )
             }
@@ -65,23 +59,4 @@ class CurrencyAdapter(private val context: Context) : RecyclerView.Adapter<Curre
             }
         }
     }
-
-
-    override fun getItemCount(): Int {
-        return items.size
-    }
-
-    fun setItems(newItems: List<ExchangeRate>) {
-        val callback = ExchangeRateDiffCallback(items, newItems)
-        val diffResult = DiffUtil.calculateDiff(callback)
-        items.clear()
-        items.addAll(newItems)
-        diffResult.dispatchUpdatesTo(this)
-    }
-
-
-
-    inner class ViewHolder(internal val binding: ItemCurrencyBinding) : RecyclerView.ViewHolder(binding.root)
-
-
 }

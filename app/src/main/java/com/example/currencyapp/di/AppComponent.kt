@@ -8,6 +8,7 @@ import com.example.currencyapp.di.module.PresenterModule
 import com.example.currencyapp.di.module.RepositoryModule
 import com.example.currencyapp.di.module.UseCaseModule
 import com.example.currencyapp.di.module.UtilsModule
+import com.example.currencyapp.ui.dialog.numberinput.NumberInputDialog
 import com.example.currencyapp.ui.screen.currency.CurrencyFragment
 import com.example.currencyapp.ui.screen.splash.SplashFragment
 import dagger.BindsInstance
@@ -39,4 +40,6 @@ interface AppComponent {
     fun inject(fragment: SplashFragment)
 
     fun inject(fragment: CurrencyFragment)
+
+    fun inject(dialog: NumberInputDialog)
 }

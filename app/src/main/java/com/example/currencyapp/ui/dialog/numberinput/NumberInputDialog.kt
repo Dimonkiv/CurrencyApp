@@ -1,43 +1,20 @@
 package com.example.currencyapp.ui.dialog.numberinput
 
 import android.content.Context
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import com.example.currencyapp.R
 import com.example.currencyapp.databinding.DialogNumberInputBinding
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.example.currencyapp.di.AppComponent
+import com.example.currencyapp.ui.base.BaseBottomSheetDialog
 
 /**
  * Created by ivankiv on 05,January,2023
  */
-class NumberInputDialog : BottomSheetDialogFragment(), NumberInputView {
+class NumberInputDialog : BaseBottomSheetDialog<NumberInputView, NumberInputPresenter, DialogNumberInputBinding>(
+        DialogNumberInputBinding::inflate
+    ), NumberInputView {
 
-    private var _binding: DialogNumberInputBinding? = null
-    private var _presenter: NumberInputPresenter? = null
     private var listener: NumberInputListener? = null
 
-    private val binding get() = _binding!!
-    private val presenter get() = _presenter!!
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        _presenter = NumberInputPresenter(this)
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        _binding = DialogNumberInputBinding.inflate(inflater, container, false)
-
-        setListeners()
-
-        return binding.root
-    }
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -51,14 +28,12 @@ class NumberInputDialog : BottomSheetDialogFragment(), NumberInputView {
         listener = null
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    override fun initUI() {
+        setListeners()
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        _presenter = null
+    override fun initDependencies(appComponent: AppComponent) {
+        appComponent.inject(this)
     }
 
     private fun setListeners() {
