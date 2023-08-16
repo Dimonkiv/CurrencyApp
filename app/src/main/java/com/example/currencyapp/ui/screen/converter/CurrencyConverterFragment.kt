@@ -1,30 +1,27 @@
 package com.example.currencyapp.ui.screen.converter
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.currencyapp.databinding.FragmentCurrencyConverterBinding
+import com.example.currencyapp.di.AppComponent
+import com.example.currencyapp.ui.base.BaseFragment
 import com.example.currencyapp.ui.dialog.numberinput.NumberInputDialog
 
 /**
  * Created by ivankiv on 29,December,2022
  */
-class CurrencyConverterFragment: Fragment(), NumberInputDialog.NumberInputListener {
+class CurrencyConverterFragment:
+    BaseFragment<CurrencyConverterView, CurrencyConverterPresenter, FragmentCurrencyConverterBinding>(
+        FragmentCurrencyConverterBinding::inflate
+    ), NumberInputDialog.NumberInputListener {
 
-    private var _binding: FragmentCurrencyConverterBinding? = null
-    private val binding get() = _binding!!
+    override fun initUI() {
+        TODO("Not yet implemented")
+    }
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        _binding = FragmentCurrencyConverterBinding.inflate(inflater, container, false)
-
-        return binding.root
+    override fun initDependencies(appComponent: AppComponent) {
+        TODO("Not yet implemented")
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -34,11 +31,5 @@ class CurrencyConverterFragment: Fragment(), NumberInputDialog.NumberInputListen
         )
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
-
     override fun onSetInput(input: String) = Unit
-
 }
